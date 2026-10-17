@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap');
+*{ padding: 0; margin: 0; box-sizing: border-box; font-family: 'Cairo', sans-serif; }
+body{ height: 100vh; background: #0a0a0a; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+.bg-circle{ position: absolute; width: 600px; height: 600px; background: #e60023; border-radius: 50%; filter: blur(150px); opacity: 0.4; right: -200px; top: 20%; transition: 0.5s; }
+.container{ width: 90%; max-width: 1200px; height: 90vh; background: rgba(255,255,255,0.05); backdrop-filter: blur(20px); border: 1px solid rgba(255,255,255,0.1); border-radius: 30px; padding: 30px 50px; }
+nav{ display: flex; justify-content: space-between; align-items: center; }
+nav .logo{ font-size: 32px; font-weight: 900; color: #fff; text-decoration: none; letter-spacing: 3px; }
+nav ul li{ display: inline-block; margin: 0 15px; }
+nav ul li a{ color: #fff; text-decoration: none; font-weight: 600; transition: 0.3s; }
+nav ul li a:hover{ color: #e60023; }
+.cart{ color: #fff; font-size: 20px; cursor: pointer; }
+.content{ display: flex; align-items: center; justify-content: space-between; height: 85%; }
+.content .text{ width: 50%; color: #fff; }
+.content .text h2{ font-size: 55px; font-weight: 900; line-height: 1.2; }
+.content .text h2 span{ color: #e60023; }
+.content .text p{ font-size: 18px; margin: 20px 0; color: #ccc; }
+.colors span{ width: 30px; height: 30px; border-radius: 50%; display: inline-block; margin: 0 5px; cursor: pointer; border: 2px solid #fff; }
+.price{ font-size: 40px; font-weight: 900; margin: 15px 0; }
+.btn{ padding: 15px 40px; background: #e60023; color: #fff; border: none; border-radius: 50px; font-size: 18px; font-weight: 700; cursor: pointer; transition: 0.3s; }
+.btn:hover{ transform: scale(1.05); box-shadow: 0 0 20px #e60023; }
+.content .image img{ width: 100%; max-width: 500px; animation: float 3s ease-in-out infinite; }
+@keyframes float{ 0%,100%{transform: translateY(0);} 50%{transform: translateY(-20px);} }
+@media(max-width: 900px){ .content{ flex-direction: column; } .content .text, .content .image{ width: 100%; text-align: center; } }
